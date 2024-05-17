@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:gravity="center"
+    android:backgroundTint="@color/white"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/custom_bg"
+
+                    android:padding="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp">
+
+                    <ImageView
+                        android:id="@+id/imgOriginal"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/txtOriginal"
+                        android:textAlignment="center"
+                        android:backgroundTint="@color/teal_700"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                    </TextView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/custom_bg"
+
+                    android:padding="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="340dp">
+
+                    <ImageView
+                        android:id="@+id/imgCompress"
+                        android:scaleType="centerCrop"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp">
+
+                    </ImageView>
+                    <TextView
+                        android:id="@+id/txtCompress"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:backgroundTint="@color/teal_700"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp">
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/txtHeight"
+                    android:layout_weight="1"
+                    android:hint="height"
+                    android:backgroundTint="@color/teal_700"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/custom_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                </EditText>
+                <EditText
+                    android:id="@+id/txtWidth"
+                    android:layout_weight="1"
+                    android:hint="width"
+                    android:backgroundTint="@color/teal_700"
+
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    android:layout_margin="6dp"
+                    android:background="@drawable/custom_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                </EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtQuality"
+                android:text="Quality"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            </TextView>
+
+            <SeekBar
+                android:id="@+id/seekQuality"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </SeekBar>
+            <Button
+                android:id="@+id/btnPick"
+                android:text="Pick Image"
+
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+            </Button>
+            <Button
+                android:id="@+id/btnCompress"
+                android:text="Compress"
+                android:visibility="gone"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+            </Button>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
